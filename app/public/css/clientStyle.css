@@ -1,0 +1,77 @@
+*
+{
+	font-family:"Crete Round",serif;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #34495E;
+}
+
+.container
+{
+	padding-bottom: 70px;
+}
+
+@media screen and (max-width: 855px) {
+	.container
+	{
+		padding-bottom: 150px;
+	}
+}
+
+@media screen and (max-width: 578px) {
+	.container
+	{
+		padding-bottom: 200px;
+	}
+}
+
+h2 {
+	color : #DBDBDB ;
+	padding-bottom : 1%;
+}
+
+.listClients {
+	text-align : center;
+	margin-top : 6%;
+}
+
+table {
+	width : 65%;
+	border-collapse: collapse;
+	margin : auto;
+}
+
+
+table tr:nth-child(even){
+	background-color : #D4D6DB;
+}
+
+table tr:nth-child(odd){
+	background-color : #E4E4E4;
+}
+
+th {
+	font-weight : bold;	
+	border: 1px solid black;
+	background-color : #656565;
+	font-size : 130%;
+	color : #DBDBDB;
+}
+
+td {
+	font-size : 110%;
+	border: 1px solid black;
+	color : #000;
+}
+
+.categories {
+	font-weight : bold;
+}

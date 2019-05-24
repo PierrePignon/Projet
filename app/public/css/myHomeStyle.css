@@ -1,0 +1,698 @@
+*
+{
+	font-family:"Crete Round",serif;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color:#34495E;
+	padding:0;
+	color:black;
+}
+
+.container
+{
+	padding-bottom: 70px;
+}
+
+@media screen and (max-width: 855px) {
+	.container
+	{
+		padding-bottom: 150px;
+	}
+}
+
+@media screen and (max-width: 578px) {
+	.container
+	{
+		padding-bottom: 200px;
+	}
+}
+
+h3
+{
+	font-size:46px;
+	color : white;
+}
+
+h2
+{
+	text-align: center;
+	font-size:26px;
+	color : black;
+}
+
+h1
+{
+	color : white;
+	font-size:26px;
+}
+
+#myHome_title{
+	color: #f1f1f1;
+	font-size: 3em;
+	text-align: center;
+}
+
+#address_salle{
+	margin-left:2%;
+	
+}
+
+/*-------------------------------------- Menu Général---------------------------------------------- */
+
+.menu
+{
+	
+	display:flex;
+}
+.menu .menuRooms
+{	
+	margin-left: 2%;
+	width:20%;	
+}
+
+.menu .listSensors
+{
+	width:38%;
+	background-color:#f1f1f1;
+	border: 1px solid black;
+}
+
+.menu .listActuators
+{
+	width:38%;
+	background-color:#f1f1f1;
+	border: 1px solid black;
+}
+
+
+/*--------------------------------------Capteurs et Actionneurs---------------------------------------------- */
+
+.fa-times
+{
+	color:red;
+	
+}
+
+.fa-plus-circle
+{
+	float:center;
+	color: #3498DB;
+}
+.addActionneurs, .addCapteurs{
+	text-align:center;
+}
+#addCapteurs, #addActionneurs{
+	cursor:pointer;
+	
+}
+
+.window, .ventilateur, .IR_Sensor, .camera, .a_sensor, .motor, .thermometer, .lightbulb{
+	width:60%;
+}
+
+.Sensors, .Actuators{
+	margin-left: 2%;
+	width:90%;
+	padding:1em;
+	display:inline-flex;
+	flex-wrap: wrap;
+	align-items: center;
+	color:black;	
+
+}
+.IR_Sensor, .window, .ventilateur{
+	width:50%;
+}
+
+.iconSensors, .iconActuators{
+	
+	width:29%;
+	margin-left:1%;
+	margin-bottom: 2%;
+	
+}
+.nameSensors, .nameActuators{
+	width:30%;
+}
+
+.valueActuators, .valueSensors{
+	width:10%;
+	text-align:center;
+}
+
+.supprSensors, .supprActuators{
+	width:29%;
+	margin-right:1%;
+}
+
+#supprSensors, #supprActuators{
+	float:right;
+}
+.switch{
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+}
+
+.switch input { 
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+
+.slider{
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+.slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+}
+
+input:checked + .slider {
+	background-color: #2196F3;
+}
+
+input:focus + .slider {
+	box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+}
+
+.slider.round {
+	border-radius: 34px;
+}
+
+.slider.round:before {
+	border-radius: 50%;
+}
+
+
+/*------------------------------------- Menu Adresses-------------------------------------------- */
+
+.listAddresses ul 
+{
+	display:inline-block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #f1f1f1;
+}
+
+.AddAddresses ul 
+{
+	display:inline-block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #3498DB;
+	margin-left:20px;
+}
+
+.listAddresses li a 
+{
+	display: inline-block;
+	color: #000;
+	text-align: center;
+	padding: 8px 16px;
+	text-decoration: none;
+	border: 1px solid black;
+}
+
+.AddAddresses li a 
+{
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 16px 16px;
+	text-decoration: none;
+}
+
+.listAddresses li 
+{
+	float:left;
+}
+
+/* ---------------------------------------------- Menu Salles -----------------------------------------------------*/
+
+.bluebtn{
+	text-align:center;
+	margin-top:5%;
+}
+
+.bluebtn ul 
+{	
+	display:inline-block;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #3498DB;
+	border-radius: 20px;
+}
+
+.listRooms ul 
+{	
+	width:100%;
+	overflow: auto;
+	margin: 0;
+	padding: 0;
+	background-color: #f1f1f1;
+}
+
+.listRooms ul li
+{
+	border: 1px solid black;
+	padding: 1em;
+}
+
+.listRooms ul li a
+{
+	display: inline-block;
+	color: #000;
+	text-decoration: none;
+}
+
+.listRooms ul li a:last-child
+{
+	float : right;
+}
+
+.bluebtn li a 
+{
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	border-radius:30px;
+}
+
+.bluebtn ul :hover 
+{	
+	border-radius:20px;
+	background-color: #2980B9;
+	color: white;
+}
+
+.listRooms ul li:hover 
+{
+	background-color: #555;
+	color: white;
+}
+
+.listRooms ul li a:hover 
+{
+	background-color: #555;
+	color: white;
+}
+
+/* ---------------------------------Dropdown pour choisir son adresse----------------------------------- */
+
+.dropbtn 
+{
+	background-color: #3498DB;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+	z-index: 0;
+}
+
+/* Dropdown button on hover & focus */
+
+.dropbtn:hover, .dropbtn:focus 
+{
+	background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+
+.dropdown 
+{
+	display: inline-block;
+	position: relative;
+}
+
+/* Dropdown Content (Hidden by Default) */
+
+.dropdown-content 
+{
+
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	z-index: 1;
+}
+
+/* Links inside the dropdown */
+
+.dropdown-content ul 
+{	
+	list-style-type: none;
+	display:flex;
+	color: black;
+	padding: 0;
+	text-decoration: none;
+}
+
+.dropdown-content ul li
+{
+	width:100%;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+
+.dropdown-content ul li a:first-child 
+{	
+	color:black;
+	text-decoration: none;
+}
+
+.dropdown-content ul li a:last-child 
+{	
+	color:black;
+	text-decoration: none;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content ul:hover 
+{
+	background-color: #ddd;
+}
+
+
+/* ---------------------------------Dropdown pour supprimer son adresse----------------------------------- */
+
+/* Dropdown Button */
+
+.Supprdropbtn 
+{
+	background-color: #3498DB;
+	color: white;
+	padding: 16px;
+	font-size: 16px;
+	border: none;
+	cursor: pointer;
+}
+
+/* Dropdown button on hover & focus */
+
+.Supprdropbtn:hover, .dropbtn:focus 
+{
+	background-color: #2980B9;
+}
+
+/* The container <div> - needed to position the dropdown content */
+
+.Supprdropdown 
+{
+	display: inline-block;
+	position: left;
+} 
+
+/* Dropdown Content (Hidden by Default) */
+
+.Suppr-dropdown-content 
+{	
+	position: absolute;
+	background-color: #f1f1f1;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+
+/* Links inside the dropdown */
+
+.Suppr-dropdown-content ul 
+{
+	display:inline-block;
+	color: black;
+	padding: 0;
+	text-decoration: none;
+}
+
+.Suppr-dropdown-content ul li a:first-child 
+{
+	text-decoration: none;
+}
+
+.Suppr-dropdown-content ul li a:last-child 
+{
+	text-decoration: none;
+}
+
+/* Change color of dropdown links on hover */
+
+.Suppr-dropdown-content ul li:hover 
+{
+	background-color: #ddd
+}
+
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+
+.show 
+{
+	display:block;
+}
+
+.Supprshow 
+{
+	display:block;
+}
+
+.menuAddresses 
+{	
+	margin-left:2%;
+	display: flex;
+	
+}
+
+.SupprAddresses ul 
+{
+	display:inline-block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #3498DB;
+	margin-left: 20px;
+}
+
+.SupprAddresses li a 
+{
+	display: inline-block;
+	color: white;
+	text-align: center;
+	padding: 16px 16px;
+	text-decoration: none;
+}
+
+.navbar #nav > .active > a 
+{
+	color: red;
+}
+
+.capteur
+{
+	margin-left:15%;
+	width:80%;
+	height:500px;
+	background-color: #f1f1f1;
+	padding: 8px 16px;
+	border: 1px solid black;
+}
+-----------------
+p 
+{
+	color: black;
+}
+
+
+/* ---------------------------------Popup ------------------------------------------------------------------- */
+
+
+
+
+.item{
+	display: inline-block;
+}
+
+
+.overlay{
+	position: fixed;
+	left: 0px;
+	top: 0px;
+	width: 100%;
+	height: 100%;
+	display: none;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+.popup{
+	margin: 10% auto;
+	width: 50%;
+	border-radius: 5px;
+	background-color: white; 
+	padding: 1em;
+}
+
+.btnClose{
+	float: right;
+	cursor: pointer;
+}
+
+.part{
+	display: inline-block;
+	margin: 1em;
+}
+
+.titre{
+	font-size: 2em;
+}
+
+.subTitle{
+	font-size: 1em;
+	font-weight: bold;
+}
+
+
+.choice_container{
+	display:flex;
+}
+
+.type_container{
+	height:150px;
+	width:100%;
+	margin-top:2%;
+	margin-bottom: 2%;
+	display: inline-flex;
+}
+.type_selection,.type_icons{
+	width:50%;
+}
+
+.type_selection select {
+	background-color: #3498DB;
+	color: white;
+	padding: 12px;
+	width: 150px;
+	border: none;
+	font-size: 15px;
+	border-radius:3px;
+}
+
+
+.type_selection:hover{
+	color: rgba(255, 255, 255, 0.6);
+	background-color: rgba(255, 255, 255, 0.2);
+}
+.type_icons{
+	text-align:center;
+
+}
+
+.icon_thermo,.icon_lum,.icon_IR{
+	text-align:center;
+	width:33%;		
+}
+
+.textform{
+	text-align:center;
+}
+.annuler, .valider{
+	text-align:center;
+	width:50%;
+}
+
+#annuler_capteurs, #annuler_actionneurs{
+	cursor:pointer;
+}
+
+.validerbtn{
+	cursor:pointer;
+	display: inline-block;
+	text-align: center;
+	padding: 0.5em 1em 0.5em 1em;
+	text-decoration: none;
+	background-color: white;
+	border:2px solid #3498DB;
+	border-radius:6px;
+	-webkit-transition-duration: 0.4s; 
+	transition-duration: 0.4s;
+}
+
+.validerbtn:hover {
+	background-color: #3498DB; 
+	color: white;
+}
+
+.annulerbtn{
+	cursor:pointer;
+	display: inline-block;
+	text-align: center;
+	padding: 0.5em 1em 0.5em 1em;
+	text-decoration: none;
+	background-color: white;
+	border:2px solid red;
+	border-radius:6px;
+	-webkit-transition-duration: 0.4s; 
+	transition-duration: 0.4s;
+}
+
+.annulerbtn:hover {
+	background-color: red; 
+	color: white;
+}
+
+
+/* ---------------------------------New Room ------------------------------------------------------------------- */
+.formulaire_container{
+	margin-top:2%;
+	text-align:center;
+
+}
+.formulaire_salle{
+	background-color:#f1f1f1;
+	display:inline-block;
+	text-align:center;
+	color:black;
+	padding:1em;
+	border:2px solid #3498DB;
+	border-radius:8px;
+}
+
+#address
+{
+	margin-left: 2%;
+}

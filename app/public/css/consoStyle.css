@@ -1,0 +1,74 @@
+*
+{
+	font-family:"Crete Round",serif;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+.container
+{
+	padding-bottom: 70px;
+}
+
+@media screen and (max-width: 855px) {
+	.container
+	{
+		padding-bottom: 150px;
+	}
+}
+
+@media screen and (max-width: 578px) {
+	.container
+	{
+		padding-bottom: 200px;
+	}
+}
+
+body
+{
+	background-color:#34495E;
+	color: #F1F1F1;
+}
+
+.card-body{
+	margin-right:60%;
+}
+.card-body2{
+	margin-top: 5%;
+	margin-left: 5%;
+	margin-right: 25%;
+	margin-bottom: 5%;
+}
+.card-body3{
+	margin-top: 5%;
+	margin-left:5%;
+	margin-right: 25%;
+	margin-bottom: 5%;
+}
+
+.text1{
+	margin-left: 40%;
+	margin-top: 8%;
+}
+.text2{
+	margin-top: 5%;
+	margin-left: 2%;
+}
+.text3{
+	margin-top: 5%;
+	margin-left: 2%;
+}
+
+#conso_title{
+	color: #f1f1f1;
+	font-size: 3em;
+	text-align: center;
+}
