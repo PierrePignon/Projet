@@ -1,0 +1,96 @@
+*
+{
+	font-family:"Crete Round",serif;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	min-height: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #34495E;
+}
+
+.container
+{
+	padding-bottom: 70px;
+}
+
+@media screen and (max-width: 855px) {
+	.container
+	{
+		padding-bottom: 150px;
+	}
+}
+
+@media screen and (max-width: 578px) {
+	.container
+	{
+		padding-bottom: 200px;
+	}
+}
+
+body{
+	background-color:#34495E;
+}
+
+h2 {
+margin-left: 30%;
+}
+.main{
+	color:#f1f1f1;
+	font-weight: none;
+	text-transform: none;
+	font-size:16px;
+	display: flex;
+
+}
+#contain{
+	color:#34495e;
+	background:white;
+	width: 35%;
+	position: fixed;
+	top:20%;
+	margin-left: 30%;
+	margin-right: 30%;
+	padding-right: 5%;
+}
+.container{
+	display:flex;
+}
+
+.partie_gauche{
+flex-direction: column;
+margin-left: 10%;
+
+}
+.partie_droite{
+margin-left:12%;
+flex-direction: column;
+
+}
+
+
+input
+{
+	
+	margin:10px auto;
+	text-align: center;	
+	border:1px solid #36b9cc;
+	padding:10px 18px;
+	border-radius: 24px;
+}
+
+input[type ="submit"]
+{
+	margin-left: 48%;
+	background: #36b9cc/*#2ecc710*/;
+	color:#f1f1f1;
+	padding:10px 18px;
+}
+input[type ="submit"]:hover{
+	background-color:#2c9faf;
+}

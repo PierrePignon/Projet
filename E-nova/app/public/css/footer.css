@@ -1,0 +1,118 @@
+*
+{
+  font-family:"Crete Round",serif;
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  position: relative;
+}
+
+.subnavbar 
+{
+  overflow: hidden;
+  background-color: #FFFFFF;
+  width: 100%;
+  text-align:center;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 0;
+  padding: 0;
+  letter-spacing: -0.25em;
+}
+
+.item{
+  display: inline-block;
+}
+
+
+#btn_cgu{
+  background-color: white;
+  color: black;
+  padding: 16px 20px;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  width: 280px; 
+  font-size: 18px;
+}
+
+#btn_contact{
+  background-color: white;
+  color: black;
+  padding: 16px 20px;
+  margin: 0;
+  border: none;
+  cursor: pointer;
+  width: 280px;  
+  font-size: 18px;
+
+}
+
+
+#btn_quisommenous{
+  background-color: white;
+  color: black ;
+  padding: 16px 20px;
+  margin:0;
+  border: none;
+  cursor: pointer;
+  width: 280px; 
+  font-size: 18px;
+}
+
+.overlay_contact{
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  display: none;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+
+
+.popup_contact{
+  margin: 10% auto;
+  width: 30%;
+  border-radius: 5px;
+  background-color: white; 
+  padding: 1em;
+}
+
+.btnClose{
+  float: right;
+  cursor: pointer;
+}
+
+.part{
+  display: inline-block;
+  margin: 1em;
+}
+
+.titre{
+  font-size: 2em;
+}
+
+.subTitle{
+  font-size: 1em;
+  font-weight: bold;
+}
+
+*
+{
+  font-family:"Crete Round",serif;
+}
+
+body
+{
+  margin: 0;
+  padding: 0;
+}
