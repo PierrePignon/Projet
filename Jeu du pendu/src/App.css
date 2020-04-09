@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap');
+*{
+  overflow: hidden;
+  text-align: center;
+}
+
+body *{
+  font-family: "Permanent Marker", sans-serif;
+}
+
+body{
+  height: 100%;
+  background: radial-gradient(#e66465, #9198e5);
+  text-align: center;
+}
+
+.game_div{
+  font-size: 20px;
+}
+.h1{
+  color:white;
+  font-size: 80px;
+}
+
+.hangman{
+  margin-top: 11%;
+  text-align: center;
+  display:flex; 
+  justify-content: space-around;
+  align-items: center;
+ 
+}
+
+
+
+.word_div{
+  font-size: 35px;
+  color:white;
+  display: flex;
+  }
+
+
+.btn{
+  background: transparent;
+  border: 5px double white;
+  color:white;
+  font-size: 30px;
+  padding: 10px 20px;
+}
+
+.alphaCont{
+
+  margin-top: 14%;
+  display: flex;
+  justify-content: space-around;
+}
+.keyboard{
+display: flex;
+flex-direction: row;
+}
+
+.button.hidden{
+  background-color: transparent;
+  padding: 15px 20px;
+  color:black; 
+
+}
+
+.button.visible{
+  background: black ;
+  padding: 15px 20px;
+  color: white;
+  opacity: 0.9;
+}
