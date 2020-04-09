@@ -12,7 +12,7 @@ const Word = ({word,selection}) =>{
           status = "notfinded"
         }
          
-        return <span id= "word_span" key={'letter_'+key} className ={status}>{status === 'finded'? letter : "__"}</span>
+        return <span id= "word_span" key={'letter_'+key} className ={status}>{status === 'finded'? letter : "_"}</span>
         }
       )
     }

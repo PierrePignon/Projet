@@ -84,20 +84,23 @@ getFeedback(letter) {
   }
 
 handleClick = letter => {
-  const { selection, gameState } = this.state
+  const { selection, gameState,word } = this.state
+  let currentWord = (word[0] + '').split('')
   let attempt = this.state.attempt
+  const usedLetter =[letter,...this.state.selection]
+  let win = this.state.win
   if(gameState === "en cours") {
     this.setState({selection: [...selection, letter]}, this.gameState)
     if(this.state.word[0].indexOf(letter)===  -1){
      attempt = this.state.attempt +1
     }
-    let win = 1
-    for (let i =0 ; i<this.state.word[0].length;i++){
-      if(selection.indexOf(this.state.word[0]) === -1){
-        win = -1
+    win = 1
+    for (let i =0 ; i< currentWord.length;i++){
+      if(usedLetter.indexOf( currentWord[i]) === -1){
+        win = 0
       }
     }
-    if(attempt === 8 && win === -1){
+    if(attempt === 8 && win === 0){
       win = -1
     }
     this.setState({attempt, win})
