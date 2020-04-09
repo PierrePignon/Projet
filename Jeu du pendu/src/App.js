@@ -131,7 +131,9 @@ newGame = () => {
     selection: [], 
     word: this.generateWord(),
     match:[], 
+    attempt:0,
     gameState : "en cours" })
+    
 }
 
 gameState = () => {
